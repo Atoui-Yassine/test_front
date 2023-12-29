@@ -1,0 +1,68 @@
+.header{
+    padding: 25px 0;
+    
+    margin-left: 0;
+    position: relative!important;
+    background: #fff;
+}
+.logo img{
+    max-height: 40px;
+}
+.header_img{
+    background-image: url('../../../../assets/images/bacgroind.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; 
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.header_pr{
+    background-color: rgba(229, 236, 236, 0.856);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    width: 600px;
+    align-items: center;
+}
+.header_text{
+    display: flex;
+    align-items: center;
+    text-wrap: wrap;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Lucida Sans', sans-serif;
+    margin-top: 30px; 
+    text-align: center;
+}
+.register_now a{
+    color: #ffff;
+    text-decoration: none;
+   
+}
+a p{
+    font-size: 16px;
+    flex-wrap: nowrap;
+    font-weight: 700;
+    margin: 0;
+}
+
+.register_now{
+background-color: rgb(197, 7, 134);
+height: 35px;
+width: 170px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+border-radius: 8px;
+}
+@media (max-width: 619px) {
+    .header_pr {
+      width: 100%; 
+        }
+  }

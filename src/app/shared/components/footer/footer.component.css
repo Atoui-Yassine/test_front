@@ -1,0 +1,60 @@
+.footer{
+    background-color: rgb(238, 148, 96);
+    border-radius: 10px;
+    height: 300px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+
+}
+.labIn{
+    width: 400px;
+}
+.labIn label{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.labIn input, textarea{
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    padding-left: 15px;
+}
+.labIn textarea{
+  height: 50px;
+  
+}
+.button button{
+margin-top: 10px;
+background-color:  rgb(197, 7, 134);
+border-radius: 5px;
+height: 30px;
+width: 180px;
+font-size: 16px;
+flex-wrap: nowrap;
+font-weight: 600;
+color: #fff; 
+border: none;
+}
+
+@media (max-width: 575px) {
+    .footer {
+      width: 100%; 
+    }
+    .labIn{
+        width :100%
+    }
+    .button button{
+        width: 100;
+    }
+  }

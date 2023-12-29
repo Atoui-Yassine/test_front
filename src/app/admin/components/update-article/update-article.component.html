@@ -1,0 +1,37 @@
+<div class="popup" *ngIf="isOpenUp">
+    <button class="close-button" (click)="closePopup()">Close</button>
+    <div class="popup-content">
+       
+
+        <form [formGroup]="articleForm" (ngSubmit)=" onSubmit() ">
+            <div>
+              <label for="title">Titre :</label>
+              <input type="text" id="title" formControlName="title"  required>
+              <div class="error" *ngIf="articleForm.get('title')?.hasError('required') ">
+                Le titre est requis.
+              </div>
+            </div>
+          
+            <div>
+              <label for="price">Prix :</label>
+              <input type="text" id="price" formControlName="price" required>
+              <div *ngIf="articleForm.get('price')?.hasError('required') ">
+                Le prix est requis.
+              </div>
+            
+            </div>
+          
+             <div>
+              <label for="image">Image :</label>
+              <input type="file" id="coursPhotoInput" formControlName="image" required>
+              <div *ngIf="articleForm.get('image')?.hasError('required')">
+                L'URL de l'image est requis.
+             </div>
+
+            </div>
+          
+            <button type="submit" [disabled]="!isAnyFieldDirty() " >Upate Cours</button>
+          </form>
+    </div>
+  </div>
+

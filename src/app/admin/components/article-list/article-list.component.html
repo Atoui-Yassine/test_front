@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="header">
+        <h1>Cours</h1>
+    <button class="Add" (click)="openPopup()">Add cours</button>
+    </div>
+        <div class="product-list-container">
+            <div class="product-card" *ngFor="let cours of coursList">
+              <img [src]="cours.file" alt="cours Name">
+              <h3 class="product-title">{{cours.title}}</h3>
+              <p class="product-price">{{cours.price}} DT/ Month</p>
+                <div class="d-flex">
+                <button class="delete"(click)="deleteCours(cours.id ?? -1 )">
+                    Delete
+                </button>
+                <button class="update" (click)="openPopupUp(cours.id ?? -1) ">
+                    Update 
+                </button>
+            </div>
+            </div>
+            
+          </div>
+          
+    
+</div>
+<app-add-article></app-add-article>
+<app-update-article></app-update-article>
